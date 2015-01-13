@@ -1,17 +1,12 @@
-// Load the SDK and UUID
 var AWS = require('aws-sdk');
-var uuid = require('node-uuid');
-
-AWS.config.update({accessKeyId: 'AKIAJAYMHJ4MKXZWLSHA', secretAccessKey: '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'});
+aws.config.loadFromPath('./AwsConfig.json');
 //AWS.config.update({region: 'us-west-1'});
 
 
-// Create an S3 client
 var s3 = new AWS.S3();
 
-// Create a bucket and upload something into it
-var bucketName = 'node-sdk-sample-ehl'; //+ uuid.v4();
-var keyName = 'hello_world.txt';
+var bucketName = 'ehl1';
+var keyName = 'hello1.txt';
 
 
 s3.createBucket({Bucket: bucketName}, function() {
