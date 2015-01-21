@@ -4,8 +4,8 @@ aws.config.loadFromPath('./AwsConfig.json');
 
 var s3 = new AWS.S3();
 
-var bucketName = 'ehl1';
-var keyName = 'hello1.txt';
+var bucketName = 'cache.labutaca.net';
+var keyName = 'test.txt';
 
   var params = {Bucket: bucketName, Key: keyName, Body: 'Hello World!'};
   s3.putObject(params, function(err, data) {
