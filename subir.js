@@ -1,5 +1,5 @@
 var AWS = require('aws-sdk');
-aws.config.loadFromPath('./AwsConfig.json');
+AWS.config.loadFromPath('./AwsConfig.json');
 
 
 var s3 = new AWS.S3();
