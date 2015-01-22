@@ -1,1 +1,1 @@
-Node examples for S3 and Ec2
+Node examples for amazon S3 and Ec2
