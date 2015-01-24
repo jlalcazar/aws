@@ -5,7 +5,7 @@ var s3 = new AWS.S3();
 
 var params = {
 	Bucket: 'cache.labutaca.net',
-	Key: 'test3.txt'
+	Key: 'test4.txt'
 };
 
 s3.putObject(params, function (err) {
