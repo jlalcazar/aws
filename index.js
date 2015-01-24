@@ -1,3 +1,4 @@
+/*jshint -W117 */
 //index.js
 var servidor = require('./servidor'); //Importamos el módulo servidor creado
 servidor.inicializar(); //Llama al método inicializar del objeto servidor
