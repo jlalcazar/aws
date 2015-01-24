@@ -1,9 +1,9 @@
 {
-  "dependencies": {
-    "aws-sdk": ">= 2.0.9",
-    "node-uuid": ">= 1.4.1"
-  },
-  "devDependencies": {
-    "aws": "0.0.3-2"
-  }
+	"dependencies": {
+		"aws-sdk": ">= 2.0.9",
+		"node-uuid": ">= 1.4.1"
+	},
+	"devDependencies": {
+		"aws": "0.0.3-2"
+	}
 }
