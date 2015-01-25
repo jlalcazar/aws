@@ -1,4 +1,5 @@
 /*jshint -W117 */
 //index.js
 var servidor = require('./servidor'); //Importamos el módulo servidor creado
-servidor.inicializar(); //Llama al método inicializar del objeto servidor
+var router = require('./router'); //Importamos el módulo router
+servidor.inicializar(router.route); //Llama al método inicializar del objeto servidor
