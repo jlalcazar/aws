@@ -1,4 +1,4 @@
-//manejador.js
+/*jshint -W117 */
 function funcion_1(resp) {
 	console.log("Funcion 1 ejecutada.");
 	resp.writeHead(200, {

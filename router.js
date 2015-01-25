@@ -1,4 +1,4 @@
-//router.js
+/*jshint -W117 */
 function route(manejador, pathName, resp) {
 	console.log("Nueva petición recibida: " + pathName);
 	if (typeof manejador[pathName] === 'function') {
