@@ -18,7 +18,7 @@ function movies(resp) {
 	resp.end();
 }
 
-function seriess(resp) {
+function series(resp) {
 	console.log("seriess ejecutada.");
 	resp.writeHead(200, {
 		"Content-Type": "text/html"
