@@ -1,6 +1,6 @@
 /*jshint -W117 */
 function route(manejador, pathName, resp) {
-	console.log("Nueva petición recibida: " + pathName);
+	console.log("- Nueva petición recibida: " + pathName);
 	if (typeof manejador[pathName] === 'function') {
 		manejador[pathName](resp);
 	} else {
@@ -8,7 +8,7 @@ function route(manejador, pathName, resp) {
 		resp.writeHead(404, {
 			"Content-Type": "text/html"
 		});
-		resp.write("404, " + pathName + " Not Found");
+		resp.write("404, Page " + pathName + " Not Found");
 		resp.end();
 	}
 }

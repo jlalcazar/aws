@@ -1,10 +1,10 @@
 /*jshint -W117 */
-function funcion_1(resp) {
-	console.log("Funcion 1 ejecutada.");
+function index(resp) {
+	console.log("index ejecutada.");
 	resp.writeHead(200, {
 		"Content-Type": "text/html"
 	});
-	resp.write("Funcion 1 ejecutada.");
+	resp.write("index ejecutada.");
 	resp.end();
 }
 
@@ -17,5 +17,5 @@ function funcion_2(resp) {
 	resp.end();
 }
 
-exports.funcion_1 = funcion_1;
+exports.index = index;
 exports.funcion_2 = funcion_2;
