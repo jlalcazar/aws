@@ -4,18 +4,30 @@ function index(resp) {
 	resp.writeHead(200, {
 		"Content-Type": "text/html"
 	});
-	resp.write("index ejecutada.");
+	resp.write("Node examples.");
 	resp.end();
 }
 
-function funcion_2(resp) {
-	console.log("Funcion 2 ejecutada.");
+function movies(resp) {
+	console.log("movies ejecutada.");
 	resp.writeHead(200, {
 		"Content-Type": "text/html"
 	});
-	resp.write("Funcion 2 ejecutada.");
+	resp.write("movies selected.");
+	resp.write("List of last seen movies");
+	resp.end();
+}
+
+function seriess(resp) {
+	console.log("seriess ejecutada.");
+	resp.writeHead(200, {
+		"Content-Type": "text/html"
+	});
+	resp.write("movies selected.");
+	resp.write("List of last seen Tv series");
 	resp.end();
 }
 
 exports.index = index;
-exports.funcion_2 = funcion_2;
+exports.movies = movies;
+exports.series = series;
